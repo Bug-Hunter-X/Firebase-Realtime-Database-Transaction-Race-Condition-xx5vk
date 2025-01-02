@@ -1,0 +1,2 @@
+# Firebase Realtime Database Transaction Race Condition
+This repository demonstrates a common error in Firebase Realtime Database applications: a race condition when incrementing a counter without using transactions.  Multiple clients concurrently attempting to update the same value lead to data loss and inconsistency.  The `bug.js` file shows the problematic code, while `bugSolution.js` presents the corrected version using Firebase transactions to ensure atomicity and data integrity.
